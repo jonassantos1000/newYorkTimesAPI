@@ -1,0 +1,30 @@
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.descricao{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imagem-carrosel {
+    object-fit: cover;
+    height: 620px;
+    opacity: 0.6;
+}
+
+.imagem-card{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 30px 0 30px 0;
+}
+
+.card:hover{
+    padding: 1px;
+}

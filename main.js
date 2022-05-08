@@ -32,7 +32,9 @@ function createCarousel(element){
         descricao.innerHTML= element[1].abstract;
         car = document.querySelector('.imagem1');
         car.src= element[1].multimedia[0].url
-
+    }
+    
+    if(element[2].multimedia[0].url){
         titulo= document.querySelector('.titulo-secundario')
         descricao= document.querySelector('.descricao-secundario')
         titulo.innerHTML = element[2].title

@@ -8,29 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     
     <title>Projeto NYT</title>
   </head>
 
   <body class="d-flex flex-column min-vh-100 w-100">
       <header class="w-100">
-          <div class="container d-flex justify-content-center">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top">
-                    <div class="container-fluid d-flex justify-content-center">
-                        <a class="navbar-brand" href="#">NYT</a>
+          <div class="container d-flex">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 fixed-top fw-bold">
+                    <div class="container d-flex justify-content-left">
+                        <a class="navbar-brand" href="#"><h1 class="fs-3">NYT</h1></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNavDropdown">
+                        <div class="navbar-collapse justify-content-center" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#notices">Notices</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Articles</a>
                             </li>
                             </ul>
                         </div>
@@ -39,57 +39,59 @@
             </div>
       </header>
 
-      <main class="flex-grow-1 mt-2 w-100">
-        <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="..." class="d-block w-100 imagem1 imagem-carrosel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 class="titulo-principal titulo"></h1>
-                    <p class="descricao-principal descricao"></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100 imagem2 imagem-carrosel" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="titulo-secundario titulo"></h1>
-                    <p class="descricao-secundario descricao"></p>
-                </div>
-              </div>
-              
-            </div>
+      <main class="flex-grow-1 mt-1 w-100">
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
- 
-        <div class="container">
-            <div class="row">
-                <h2 class="notices text-center mt-3 titulo" id="notices">Notices</h2>
-                <div class="conteudo d-flex flex-wrap mt-2">
-
+        <article>
+          <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  
                 </div>
-            </div>
-        </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="#" id="link-imagem1"><img src="#" class="d-block w-100 imagem1 imagem-carrosel" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 id="titulo__carrosel_1" class="titulo"></h2>
+                        <p class="descricao-principal descricao"></p>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <a href="#" id="link-imagem2"><img src="#" class="d-block w-100 imagem2 imagem-carrosel" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 id="titulo__carrosel_2" class="titulo"></h2>
+                        <p class="descricao-secundario descricao"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="control-carousel">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </div>
+        </article>
+  
+        <article class="container">
+          <div class="row">
+              <h3 class="notices text-center mt-3 titulo-noticia" id="notices">Notices</h3>
+              <div class="conteudo d-flex flex-wrap mt-2 justify-content-center"></div>
+          </div>  
+        </article>
 
       </main>
 
       <footer class="d-flex h-100 bg-primary w-100">
           <div class="container">
-            <div class=" row  p-3">
-                
-            </div>
+            <div class=" row  p-3"></div>
           </div>
       </footer>
 

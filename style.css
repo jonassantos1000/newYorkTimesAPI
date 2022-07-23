@@ -1,21 +1,29 @@
-.titulo{
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 40px;
-    font-weight: bold;
+.card{
+    width: 250px;
+    margin: 2px;
+    border-radius: 30px 0 0 0;
+}
+
+.card:hover{
+    padding: 0.5px;
 }
 
 .descricao{
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
     font-size: 20px;
-    font-weight: bold;
+}
+
+
+.bg-imagem{
+    background-color: black;
+    width: 100%;
+    height: 100%;
 }
 
 .imagem-carrosel {
-    object-fit: cover;
-    height: 620px;
-    opacity: 0.6;
+    filter: brightness(.27);
+    height: 100vh;
 }
 
 .imagem-card{
@@ -25,6 +33,14 @@
     border-radius: 30px 0 30px 0;
 }
 
-.card:hover{
-    padding: 1px;
+.titulo{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.titulo-noticia{
+    font-size: 40px;
+    color: black;
 }
